@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 95%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: auto;
+        }
+
+        .logo1 {
+            width: 20%; 
+            margin-right: 20px; /* Añade margen derecho para separar del título */
+        }
+
+        .logo2 {
+            width: 15%;
+            margin-left: 20px; /* Añade margen izquierdo para separar del título */
+        }
+
+        .title-container {
+            text-align: center;
+            flex-grow: 1; /* Permite que el título ocupe todo el espacio restante */
+        }
+
+        .textoAnimado {
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="logo1.png" alt="Descripción de la imagen" class="logo logo1">
+    <div class="title-container">
+        <h1 class="textoAnimado">Periodistas Unidos</h1> 
+    </div>
+    <img src="logo2.png" alt="Descripción de la imagen" class="logo logo2">
+</div>
+
+</body>
+</html>

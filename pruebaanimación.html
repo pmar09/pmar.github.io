@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .icons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .image-container {
+            position: relative;
+            width: 45%;
+            margin: 10px;
+            overflow: hidden; /* Evita que el círculo se desborde */
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative; /* Ajustar la posición de la imagen */
+            z-index: 1; /* Coloca la imagen encima del círculo */
+        }
+        
+        .image-container::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%; /* Ancho proporcional al tamaño de la imagen */
+            padding-top: 60%; /* Altura proporcional al ancho */
+            border-radius: 50%;
+            background-color: green;
+            z-index: 0; /* Coloca el círculo detrás de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <div class="icons-container">
+        <div class="image-container">
+            <img src="image1.jpeg" alt="Image 1">
+            <center><h1>Consecuencias</h1></center>
+        </div>
+        <div class="image-container">
+            <img src="image2.png" alt="Image 2">
+            <center><h1>Riesgos Psicosociales</h1></center>
+        </div>
+        <div class="image-container">
+            <img src="image3.png" alt="Image 3">
+            <center><h1>Estrés Post Traumático</h1></center>
+        </div>
+        <div class="image-container">
+            <img src="image4.png" alt="Image 4">
+            <center><h1>¿Cómo cuidar la salud mental en periodistas?</h1></center>
+        </div>
+    </div>
+</body>
+</html>
+
